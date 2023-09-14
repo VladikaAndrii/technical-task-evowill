@@ -1,0 +1,8 @@
+# requests
+requests==2.31.0
+
+# CLI app
+typer==0.9.0
+
+# logging
+loguru==0.7.2
