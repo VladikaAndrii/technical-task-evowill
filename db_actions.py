@@ -39,8 +39,8 @@ class ActivityDatabase:
                 cursor = self.conn.cursor()
                 cursor.execute(sql, values)
                 self.conn.commit()
-        except sqlite3.Error as e:
-            logger.exception(e)
+        except sqlite3.Error as exception:
+            logger.exception(exception)
 
     def get_latest_activities(self, limit: int = 5) -> List[tuple]:
         cursor = self.conn.cursor()
